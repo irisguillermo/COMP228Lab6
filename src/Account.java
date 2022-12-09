@@ -7,6 +7,9 @@ public class Account
         balance = 0;
     }
 
+    public Account(int i, int i1) {
+    }
+
     public void deposit (double amount)
     {
         System.out.print("Depositing" + amount);
@@ -32,7 +35,11 @@ public class AccountTest
 {
     public static void main (String [ ] args)
     {
-        
+        Account account = new Account(1000, 10);
+        account.withdraw(100);
+        account.deposit(500);
+        account.getBalance();
+        System.out.println(account.getBalance());
     }
 
 }
